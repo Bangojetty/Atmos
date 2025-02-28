@@ -1,0 +1,38 @@
+# Unity Generated Files
+[Ll]ibrary/
+[Tt]emp/
+[Oo]bj/
+[Bb]uild/
+[Bb]uilds/
+[Ll]ogs/
+UserSettings/
+MemoryCaptures/
+
+# Ignore Auto-generated Unity files
+*.csproj
+*.unityproj
+*.sln
+*.suo
+*.tmp
+*.vscode/
+*.user
+*.pidb
+*.booproj
+*.svd
+
+# Ignore Unity's Cache and Temporary Data
+*.apk
+*.aab
+*.unitypackage
+*.assetbundle
+
+# Ignore OS-specific files
+.DS_Store
+Thumbs.db
+
+# Rider/Visual Studio Code
+.idea/
+.vscode/
+
+# Ignore PlayMode and Editor Logs
+/Logs/
