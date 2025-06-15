@@ -10,7 +10,8 @@ GameObject:
   m_Component:
   - component: {fileID: 4234327088292416764}
   - component: {fileID: 8255537541337606620}
-  - component: {fileID: 6153964698993523765}
+  - component: {fileID: 4955049693644991873}
+  - component: {fileID: 3073541149710219912}
   - component: {fileID: 6539206059981653235}
   m_Layer: 5
   m_Name: Champion
@@ -47,7 +48,7 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 73023421425263251}
   m_CullTransparentMesh: 1
---- !u!114 &6153964698993523765
+--- !u!114 &4955049693644991873
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -67,7 +68,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -2618618111374563509, guid: 001e91892062ef84eb133d52d531127a, type: 3}
+  m_Sprite: {fileID: 0}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -77,6 +78,62 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &3073541149710219912
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 73023421425263251}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 0
+    m_WrapAround: 0
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_SelectedTrigger: Selected
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 4955049693644991873}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 6539206059981653235}
+        m_TargetAssemblyTypeName: Champion, Assembly-CSharp
+        m_MethodName: OnClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &6539206059981653235
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -89,10 +146,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 71addeffcb506d848b639245e8e44b03, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  icon: {fileID: 6153964698993523765}
+  btn: {fileID: 3073541149710219912}
   borderImage: {fileID: 8501131408786109608}
   greenBorder: {fileID: 21300000, guid: f0933304c3cec1d4d92c0459b37c7df4, type: 3}
-  redBorder: {fileID: 21300000, guid: 2fa6710e5f35e804ba1b586bf3a42016, type: 3}
+  orangeBorder: {fileID: 21300000, guid: 5c89640b4e5c9e243a34c009b2f4e65e, type: 3}
 --- !u!1 &2116475617478425506
 GameObject:
   m_ObjectHideFlags: 0

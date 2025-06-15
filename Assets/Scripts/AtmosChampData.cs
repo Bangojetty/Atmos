@@ -1,6 +1,15 @@
+using System;
 using System.Collections.Generic;
-using UnityEngine;
 
+[Serializable]
 public class AtmosChampData {
-    private List<MatchUp> matchups;
+    public string id;
+
+    public List<MatchUp> matchups;
+
+
+    public AtmosChampData(ChampionData champData) {
+        matchups = new List<MatchUp>();
+        id = champData.GetId();
+    }
 }

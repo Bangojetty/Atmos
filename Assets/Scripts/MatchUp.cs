@@ -1,7 +1,7 @@
 using System;
 using System.Collections.Generic;
-using UnityEngine;
 
+[Serializable]
 public class MatchUp {
     private string difficulty;
     private string playStyle;
