@@ -10,7 +10,6 @@ public class AtmosData {
         foreach (var champ in dataChamps) {
             ChampionData newChampionData = new(champ.Value["id"].ToString());
             champions.Add(newChampionData);
-            Debug.Log($"({newChampionData.GetId()})");
         }
         isInitialized = true;
     }

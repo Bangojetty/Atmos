@@ -42,13 +42,14 @@ public class MenuManager : MonoBehaviour {
         mainMenu.SetActive(false);
         champPageObj.SetActive(false);
         championMenu.SetActive(true);
+        
     }
 
     private void LoadChampIcons() {
         foreach (var champ in atmosData.champions) {
             GameObject champObj = Instantiate(championPfb, championContainer.transform);
             champObj.GetComponent<Champion>().champData = champ;
-            champObj.name = champ.GetId();
+            champObj.name = utils.NameFromId(champ.id);
             if (champ.icon != null) {
                 champObj.GetComponent<Button>().image.sprite = champ.icon;
             }

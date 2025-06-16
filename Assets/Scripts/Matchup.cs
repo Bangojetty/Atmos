@@ -8,16 +8,16 @@ using UnityEngine.UI;
 public class Matchup : MonoBehaviour {
     public Image icon;
     public TMP_Text champNameText;
-    public Difficulty difficulty;
     public Image difficultyBorderImage;
     public GameObject startingItemsContainer;
-    public MatchupData matchupData;
     public Color orange = new Color(1f, 0.5f, 0f);
+    
+    public MatchupData matchupData;
     
 
     public void SetDifficulty(Difficulty newDifficulty) {
-        difficulty = newDifficulty;
-        switch (difficulty) {
+        matchupData.difficulty = newDifficulty;
+        switch (newDifficulty) {
             case Difficulty.EASY:
                 difficultyBorderImage.color = Color.green;
                 break;
@@ -35,4 +35,6 @@ public class Matchup : MonoBehaviour {
                 break;
         }
     }
+    
+    
 }

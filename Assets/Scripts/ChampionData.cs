@@ -8,7 +8,4 @@ public class ChampionData {
     public ChampionData(string id) {
         this.id = id;
     }
-    public string GetId() {
-        return id == "MonkeyKing" ? "Wukong" : id;
-    }
 }

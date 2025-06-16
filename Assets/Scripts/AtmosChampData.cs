@@ -4,12 +4,11 @@ using System.Collections.Generic;
 [Serializable]
 public class AtmosChampData {
     public string id;
-
-    public List<MatchupData> matchups;
+    public Dictionary<string, MatchupData> idToMatchupData;
 
 
     public AtmosChampData(ChampionData champData) {
-        matchups = new List<MatchupData>();
-        id = champData.GetId();
+        idToMatchupData = new Dictionary<string, MatchupData>();
+        id = champData.id;
     }
 }
