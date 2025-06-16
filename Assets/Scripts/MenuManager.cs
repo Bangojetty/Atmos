@@ -26,7 +26,7 @@ public class MenuManager : MonoBehaviour {
     public GameObject champPageObj;
     public ChampPage champPage;
     public bool iconsAreLoaded;
-
+    
     public void Start() {
         riotApi = new RiotAPI();
         StartCoroutine(LoadData());
@@ -105,7 +105,7 @@ public class MenuManager : MonoBehaviour {
     public void OpenChampPage(ChampionData champData) {
         champPageObj.SetActive(true);
         championMenu.SetActive(false);
-        champPage.LoadChampPage(champData);
+        champPage.LoadChampPage(champData, atmosData);
     }
     
 }

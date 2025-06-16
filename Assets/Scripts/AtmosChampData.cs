@@ -5,11 +5,11 @@ using System.Collections.Generic;
 public class AtmosChampData {
     public string id;
 
-    public List<MatchUp> matchups;
+    public List<MatchupData> matchups;
 
 
     public AtmosChampData(ChampionData champData) {
-        matchups = new List<MatchUp>();
+        matchups = new List<MatchupData>();
         id = champData.GetId();
     }
 }
